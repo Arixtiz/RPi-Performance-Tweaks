@@ -8,7 +8,9 @@ If pip can't install dependencies automatically, manually add them:
 
 ```bash
 $ sudo apt-get update
+$ sudo apt-get full-upgrade
 $ sudo apt-get install python3 python3-pip python3-pil libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5 -y
+$ sudo pip3 install --upgrade setuptools
 
 ```
 
