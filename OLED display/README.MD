@@ -10,6 +10,7 @@ If pip can't install dependencies automatically, manually add them:
 $ sudo apt-get update
 $ sudo apt-get full-upgrade
 $ sudo apt-get install python3 python3-pip python3-pil libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5 -y
+$ sudo -H pip3 install --upgrade luma.oled
 $ sudo pip3 install --upgrade setuptools
 $ sudo pip3 install --upgrade adafruit-python-shell
 ```
@@ -67,7 +68,7 @@ $ crontab -e
 ```
 Add the following line to the crontab file:
 ```bash
-@reboot python3 /home/pi/sys_info.py &
+@reboot python3 /home/pi/sys_info.py
 ```
 This line ensures that the Python script (sys_info.py in this case) will be executed in the background every time the Raspberry Pi reboots.
 
