@@ -65,7 +65,7 @@ $ crontab -e
 ```
 Add the following line to the crontab file:
 ```bash
-   @reboot python3 /home/pi/sys_info.py &
+@reboot python3 /home/pi/sys_info.py &
 ```
 This line ensures that the Python script (sys_info.py in this case) will be executed in the background every time the Raspberry Pi reboots.
 
